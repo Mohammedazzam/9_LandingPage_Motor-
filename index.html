@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,43 @@
     <title>Motor Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content" id="bike">
+            <h2>THE BMW</h2>
+            <h1>G 310 R</h1>
+            <p>The strength of the G is in its Lightness and agility The strength of the G is in its Lightness and
+                agilityThe strength of the G is in its Lightness and agilityThe strength of the G is in its Lightness
+                and agility</p>
+            <h3> Choose Your Color</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike");
     
+        redBtn.onclick = function() {
+            bike.style.backgroundImage = "url(images/BMW1.png)"
+        }
+        blueBtn.onclick = function() {
+            bike.style.backgroundImage = "url(images/BMW2.png)"
+        }
+        blackBtn.onclick = function() {
+            bike.style.backgroundImage = "url(images/BMW3.png)"
+        }
+    </script>
 </body>
+
 </html>
